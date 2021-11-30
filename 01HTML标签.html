@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--字符集：字符的集合-->
+<!--常见字符集：GBK(gb2312)/UTF-8。 GBK仅存储汉字和一些外文 UTF-8存储世界上所有字符-->
+    <meta charset="UTF-8">
+    <title>这是浏览器title</title>
+    <base target="_self">
+<!--    <style type="text/css">-->
+<!--        ul{-->
+<!--            list-style: none;-->
+<!--        }-->
+<!--        li{-->
+<!--            float: left;-->
+<!--            background-color: yellow;-->
+<!--            width:150px;-->
+<!--            heigth:50px;-->
+<!--            text-align: center;-->
+<!--            line-height: 50px;/*行间距*/-->
+
+<!--        }-->
+<!--    </style>-->
+</head>
+<body>
+<!--插入（取消）注释：Ctrl+/-->
+<!--给一行打上标签：soft-wrap  Ctrl+Alt+T-->
+<!--快速移动代码： 向上：Ctrl+Shift+向上 ；向下：Ctrl+Shift+向下-->
+<!--快速新起一行：shift+enter-->
+
+<!--标题h1-h6-->
+<h1>这是一记标题</h1>
+<h2>这是二级标题</h2>
+
+
+<!--横线，一行-->
+<!--width和align属性不推荐在html中使用-->
+<hr width="50px" align="left">
+
+<!--段落，单独占一行,不同文本-->
+<p>wenben1</p>
+<!--粗体文本-->
+<b>wenben1</b>
+
+<!--img标签不会独占一行-->
+<!--其他属性：width height title alt-->
+<!--同时指定width height 图片可能会变形。解决：只指定高度或宽度，系统会自动按比例缩放图片，不会变形-->
+<!--title属性：告诉浏览器，当鼠标悬停在该图片上时出现的提示语-->
+<!---alt:alternate 当需要显示的图片找不到了时显示什么内容-->
+<img src="01.jpg" alt="找不到图片"><br><br>
+<img src="https://th.bing.com/th/id/R33674725d9ae34f86e3835ae30b20afe?rik=Pb3C9e5%2b%2b3a9Vw&riu=http%3a%2f%2fwww.desktx.com%2fd%2ffile%2fwallpaper%2fscenery%2f20180626%2f4c8157d07c14a30fd76f9bc110b1314e.jpg&ehk=9tpmnrrRNi0eBGq3CnhwvuU8PPmKuy1Yma0zL%2ba14T0%3d&risl=&pid=ImgRaw" width="250" title="鼠标悬停时">
+<!--路径问题：src有相对路径也有绝对路径 -->
+    <!--相对路径：从.html位置开始查找 同级即图片和.html文件存储在同一个文件夹中 src="QR.jpg" 下级即存储图片的文件夹和.html文件在同一个
+    文件夹中 src="images/QR.jpg" 上级即存储图片的位置和存储代码的文件夹在同一个文件夹中 src="../QR.jpg" ”../“是上一级-->
+    <!--绝对路径：从指定的盘符开始查找C:\-->
+    <!--注意事项：1.路径中不要有中文 2.相对路径指定文件不可以进行跨盘访问 3.使用相对路径，可移植性-->
+
+<!--换行br-->
+<!--br标签可以多次使用，使用几次就换几次行.br标签：不另起一个段落换行，而在企业开发中一般情况下换行都是因为需要另起一个段落换行，所以在企业中一般
+不用-->
+<!--另起一段落换行，可以使用p标签包裹-->
+
+<!--a标签:页面与页面之间的跳转-->
+<!--<a href="跳转的链接">显示的内容</a> a标签必须有href属性-->
+<!--文字点击跳转-->
+<a href="https://www.zhihu.com" target="_blank" title="鼠标悬停时">知乎</a>
+<!--图片点击跳转-->
+<a href="https://www.zhihu.com">
+    <img src="https://th.bing.com/th/id/R33674725d9ae34f86e3835ae30b20afe?rik=Pb3C9e5%2b%2b3a9Vw&riu=http%3a%2f%2fwww.desktx.com%2fd%2ffile%2fwallpaper%2fscenery%2f20180626%2f4c8157d07c14a30fd76f9bc110b1314e.jpg&ehk=9tpmnrrRNi0eBGq3CnhwvuU8PPmKuy1Yma0zL%2ba14T0%3d&risl=&pid=ImgRaw" width="250" title="鼠标悬停时">
+</a>
+<!--本地HTML文件跳转，使用相对路径-->
+<a href="01HTML标签.html">本地HTML</a>
+<!--其他属性-->
+    <!--target:控制如何跳转 值：_self(在当前页面跳转,默认值）,_blank（新建页面跳转）-->
+    <!--title:鼠标悬停时的显示文本-->
+
+<!--base标签：专门用来指定所有网页的超链接（a标签）的打开方式：_blank or _self-->
+<!--注意点：1.写在head中,target属性  2.当base标签和a标签同时指定打开方式，以a标签为准-->
+<a href="https://www.qq.com" target="_blank">糯</a>
+<a href="https://www.zhihu.com">网</a>
+
+<!--假链接:点击后不会跳转的链接 意义：其他页面没有开发出来，无法跳转-->
+<!--格式：1.#  2.javascript  区别：#点击后会自动回到网页的顶部  javscript点击后不会回到网页的顶部-->
+<a href="#">假链接1</a>
+<br>
+
+<!--锚点：在一个页面，点击目录表后跳转到指定位置-->
+<!--要想跳转到指定位置，必须给a标签绑定一个独一无二的身份证号，这样a标签才可以在当前界面中找到需要跳转到的位置：用id属性-->
+<!--注意点：1.通过a标签跳转到当前页面的指定位置是没有过渡动画的，一下子到达指定位置
+    2.a标签可以跳转到当前界面的指定位置，还可以跳转到其他页面的指定位置-->
+<!--同界面跳转-->
+<a href="#center">跳转到中部</a>
+<br>
+<a href="#bottom">跳转到底部</a>
+<h2>我是顶部</h2>
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 id="center">我是中部</h2>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 id="bottom">我是底部</h2>
+
+<!--不同界面跳转指定位置-->
+<a href="锚点跳转其他界面指定位置测试.html#03">跳转到锚点测试界面</a>
+
+<!--列表标签-->
+<!--无序列表：没有先后之分 中国的城市 ul:unordered list 使用粗体小圆点标记，可以在css中去掉 head部分-->
+<!--应用：导航条、新闻列表、商品列表-->
+<!--type="disc/circle/square"属性规定使用的圆圈方式 但不推荐在html中使用-->
+<h2>无序列表</h2>
+<ul>
+    <li>工作
+        <ul>
+            <li>111</li>
+            <li>222</li>
+            <li>333</li>
+        </ul>
+    </li>
+    <li>生活
+        <ul>
+            <li>111</li>
+            <li>222</li>
+            <li>333</li>
+        </ul>
+    </li>
+</ul>
+<!--快速生成ul和li标签-->
+<!--ul>li 按tab 生成ul里面一个li ；ul>li*3 按tab 生成一个ul里面3个li-->
+<!--ul>li*2>h2+ul>li*3-->
+
+<!--有序列表：排行榜 ol:ordered list 使用数字标记-->
+<!--type=1、A、a、I、i规定使用的标记类型-->
+<!--start=50规定有序列表的起始值-->
+<!--reversed规定降序9、8、7……-->
+<h2>有序列表</h2>
+<ol type="A" reversed>
+    <li>Coffee</li>
+    <li>Milk</li>
+</ol>
+<!--快速生成ol标签-->
+<!--ol>li*4>h2+ol>li*3-->
+
+<!--自定义列表不仅仅是一列项目，而是项目及其注释的组合。自定义列表以dl:definition list 标签开始。每个自定义列表项以dt:title开始。每个自定义列表项的定义以dd:description开始。-->
+<!--应用场景：1.做网站尾部相关信息 2.做图文混排-->
+<!--dl中只放dt和dd标签，一个dt可以没有对应的dd,也可以有多个dd。推荐一个dt对应一个dd-->
+<!--dt和dd标签中可以放其它标签-->
+<h2>自定义列表</h2>
+<dl>
+    <dt>1111</dt>
+    <dd>解释1</dd>
+    <dt>2222</dt>
+    <dd>解释2</dd>
+</dl>
+<!--dl>dt+dd>a*3-->
+
+<!--表格标签table,使用率很广-->
+<!--table表示表格，tr表示一行，th表示一行中的单元格标题会粗体，td表示一行中的一个单元格-->
+<!--每次按照行来写tr.一个table多个tr,一个tr会有多个th或者td。表格border属性，边框默认=0-->
+<!-- th标签存储当前列的标题，自动加粗居中-->
+<!--table>tr>th*2+tr>td*2-->
+
+<!--1.表格的宽度和高度属性：table和td可用-->
+<!--width和height手动设置高度和宽度-->
+<!--给td设置width和height会修改当前单元格，但不会改变整体表格-->
+
+<!--2.水平对齐和垂直对齐属性：水平对齐table、tr、td可用；垂直对齐只可tr、td使用-->
+<!--水平对齐align:left\center\right-->
+<!--垂直对齐valign:top\center\bottom-->
+
+<!--3.外边距与内边距：table可用-->
+<!--外边距：单元格与单元格间隔默认2px cellspacing-->
+<!--内边距：单元格边框和文字的间距默认1px  cellpadding(填充）-->
+<table border="1" width="150px" height="50px" cellspacing="10px" cellpadding="10px">
+    <tr>
+        <th>1.1</th>
+        <th>1.2</th>
+    </tr>
+    <tr align="right">
+        <td width="100px" height="48px">2</td>
+        <td valign="top">3</td>
+    </tr>
+</table>
+
+<!--细线表格:bgcolor属性：table、tr、td可用-->
+<!--1.给table设置bgcolor-->
+<!--2.给tr设置bgcolor-->
+<!--3.设置table的cellspacing-->
+<table bgcolor="black" cellspacing="1px">
+    <tr bgcolor="white">
+        <td>111</td>
+        <td>222</td>
+    </tr>
+    <tr bgcolor="yellow">
+        <td>333</td>
+        <td>444</td>
+    </tr>
+</table>
+<!--对比-->
+<table border="1" cellspacing="0">
+    <tr>
+        <td>qqq</td>
+        <td>eeee</td>
+    </tr>
+    <tr>
+        <td>eeee</td>
+        <td>eeee</td>
+    </tr>
+</table>
+
+<!--caption标签：给表格加标题。放在table标签里面-->
+<table border="1">
+    <caption>hahhhhah</caption>
+        <tr>
+            <td>111</td>
+            <td>2222</td>
+        </tr>
+        <tr>
+            <td>3333</td>
+            <td>55555</td>
+        </tr>
+</table>
+
+<!--合并单元格:只可向右或者向下合并-->
+水平合并：colspan
+<table bgcolor="black" width="150px" height="50px" cellspacing="1">
+    <tr bgcolor="white">
+        <td colspan="2"></td>
+        <td></td>
+<!--        <td></td>-->
+    </tr>
+    <tr bgcolor="white">
+        <td rowspan="2"></td>
+        <td colspan="2"></td>
+<!--        <td></td>-->
+    </tr>
+    <tr bgcolor="white">
+        <td></td>
+        <td></td>
+<!--        <td></td>-->
+    </tr>
+</table>
+
+<!--合并单元格练习-->
+<table border="1">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td colspan="3"></td>
+<!--        <td></td>-->
+<!--        <td></td>-->
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<table border="1">
+    <tr>
+        <td></td>
+        <td rowspan="4"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+<!--        <td></td>-->
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+<!--        <td></td>-->
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+<!--        <td></td>-->
+        <td></td>
+    </tr>
+</table>
+
+<table border="1">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td></td>
+<!--        <td></td>-->
+    </tr>
+    <tr>
+        <td></td>
+        <td rowspan="2"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+<!--        <td></td>-->
+    </tr>
+</table>
+
+<table border="1">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td rowspan="2" colspan="2"></td>
+<!--        <td></td>-->
+    </tr>
+    <tr>
+        <td></td>
+<!--        <td></td>-->
+<!--        <td></td>-->
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<!--表单标签form：收集信息-->
+<!--input标签：type属性-->
+<form action="https://www.baidu.com">
+<!--    明文输入框：-->
+    账号：<input type="text">
+    <br>
+<!--    暗文输入框:输入的显示-->
+    密码：<input type="password">
+
+<!--    给输入框设置默认值-->
+    <br>
+    <br>
+    账号：<input type="text" value="123">
+    <br>
+    密码：<input type="password" value="12345">
+
+<!--    单选框出：radio收音机单选-->
+<!--    1.单选框默认不互斥，给所有单选框加name属性，必相同-->
+<!--    2.默认选中：checked属性,多个选中最后一个-->
+    <br>
+    男<input type="radio" name="sex" checked>
+    女<input type="radio" name="sex">
+
+<!--    多选框：checkbox-->
+    <br>
+    111<input type="checkbox" checked>
+    222<input type="checkbox" >
+    333<input type="checkbox" >
+</form>
+
+<!--按钮-->
+<form action="https://www.baidu.com">
+<!--    普通按钮-->
+    <input type="button" value="按钮" onclick=alert("huji")>
+
+<!--    图片按钮-->
+    <input type="image" src="https://th.bing.com/th/id/R33674725d9ae34f86e3835ae30b20afe?rik=Pb3C9e5%2
+    b%2b3a9Vw&riu=http%3a%2f%2fwww.desktx.com%2fd%2ffile%2fwallpaper%2fscenery%2f20180626%2f4c8157d07c14a30fd76f9bc110
+    b1314e.jpg&ehk=9tpmnrrRNi0eBGq3CnhwvuU8PPmKuy1Yma0zL%2ba14T0%3d&risl=&pid=ImgRaw" width="50px" height="50px" onclick=alert("juiu")>
+
+<!--    重置按钮-->
+    <br>
+    111<input type="text">
+    222<input type="text">
+    <input type="reset" value="清空">
+
+<!--    submit按钮-->
+<!--    1.表单数据提交到哪个服务器：form的action属性-->
+<!--    2.哪些表单数据需要提交：表单标签添加name属性，value指定提交的值-->
+    <br>
+    <input type="radio" name="sex" value="male" checked>男
+    <input type="radio" name="sex" value="female">女
+    <input type="text" name="aa">
+    <input type="submit" value="提交">
+
+<!--    隐藏域:悄悄提交数据。Js中value值可动态设置-->
+    <input type="hidden" name="cc" value="it9999">
+</form>
+
+<!--label标签：点击文字可聚焦到对应的输入框。让输入框和文字绑定-->
+<h6>label</h6>
+<form action="">
+<!--    1.id与for保持一致-->
+    <label for="account">账号：</label>
+    <input type="text" id="account">
+    <br>
+    <label for="pass">密码：</label>
+    <input type="password" id="pass">
+    <hr>
+
+<!--    2.label整体绑定，局限性：只能点击账号绑定text,无法点击账号绑定password-->
+    <label>
+        账号：<input type="text">
+    </label>
+    <br>
+    <label>
+        密码：<input type="password">
+    </label>
+</form>
+
+<!--datalist标签：给输入框绑定待选项；与input配合使用，定义input的可能值-->
+<!--input的list属性与id属性绑定使用-->
+<!--了解：有些浏览器不支持-->
+车型：<input type="text" list="cars">
+<datalist id="cars">
+    <option value="qqq">qqq</option>
+    <option value="tyty">rtrt</option>
+    <option value="yuyu">yuyu</option>
+</datalist>
+<!--HTML5有规定type多种类型-->
+<!--color 、date 、datetime 、datetime-local 、email 、month 、number 、range 、search 、tel 、time 、url 、week-->
+
+<!--select标签：下拉列表-->
+<!--1.不能输入内容，但是可以下拉选择内容-->
+<!--2.option的selected属性列表的默认值-->
+<!--3.optgroup给下拉列表数据分类-->
+<select>
+    <optgroup label="北京">
+        <option value="朝阳">朝阳</option>
+        <option value="同舟">同舟</option>
+        <option value="海点">海点</option>
+    </optgroup>
+    <optgroup label="广州">
+        <option value="天河">天河</option>
+        <option value="荔湾">荔湾</option>
+        <option value="繁育">繁育</option>
+    </optgroup>
+</select>
+
+<!--textarea:多行输入框-->
+<!--1.可通过cols和rows指定输入框列数行数，但还是可以往下无限延伸-->
+<!--2.默认输入框可手动拉伸 css resize:none-->
+<textarea cols="3" rows="2"></textarea>
+
+<nav>导航标签</nav>
+<!--组合行内元素，以控制不同的样式-->
+<p><span>text</span>yuyuyu</p>
+
+<!--audio\video标签-->
+<video src=""></video>
+<!--解决浏览器视频视频格式问题：mp4 ogg webm 浏览器选择一种格式播放-->
+<!--浏览器必须支持HTML5标签，有些浏览器不支持。通过JS框架HTML5 media实现-->
+<video>
+    <source src="" type="">
+    <source src="" type="">
+</video>
+
+<!--详情和概要标签-->
+<!--open属性默认显示详细信息-->
+<details open>
+    <summary>概要信息</summary>
+    <p>点开详细介绍</p>
+</details>
+
+<!--marquee标签：弹幕实现-->
+<!--direction设置方向 scrollamount设置滚动速度 loop滚动次数，默认-1，无限滚动-->
+
+<marquee behavior="slide" direction="right">随便什么</marquee>//滚到边界不动
+<marquee behavior="alternate" direction="up">随便什么</marquee>//滚到边界又弹回去
+<marquee behavior="" direction="down">随便什么</marquee>
+<marquee behavior="" direction="down">
+    <img src="" alt="">
+</marquee>
+
+<!--字符实体：有些字符在HTML中是被保留的，是不能直接显示出来的.tab换行也是空格 常见的：-->
+<!--空格：&nbsp;-->
+<!--<:&lt;-->
+<!--&gt;:&gt;-->
+<!--版权：&copy;-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+wenben1
+</body>
+</html>
