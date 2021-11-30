@@ -1,0 +1,4 @@
+@import "../common.wxss";
+image {
+  margin-top: 10rpx;
+}

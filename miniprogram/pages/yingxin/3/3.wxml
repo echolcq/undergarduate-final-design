@@ -1,0 +1,56 @@
+<text bindtap="showModal" class="cuIcon-list modal-button {{modalName=='DrawerModal'?'hidden':''}}"></text>
+<scroll-view scroll-y='true' class='scroll-view' scroll-into-view="{{scrollTo}}">
+  <view class="container">
+    <text class='title'>食在川大</text>
+    <view class="content">
+      <para name="万秀园" id='a1'>
+        <text>宿舍群的东侧，靠近东门公寓，在北科体育馆对面。一层并设有四台校园卡圈存机，可以进行校园卡转账、网费缴纳和电费充值等业务；二层有校园卡现金充值的人工窗口。</text>
+        <text class='subtitle'>营业时间及楼层：</text>
+        <text>早餐(时间 <text class="hightlight">6:45-9:00</text>)，一、二层。</text>
+        <text>午餐(时间：<text class="hightlight">10:30-13:00</text>)，一、二、三、四层。</text>
+        <text>晚餐(时间：<text class="hightlight">16:45-18:50</text>)，一、二、三、四层。</text>
+        <text>夜宵(时间：<text class="hightlight">18:50-21:00</text>)，一层。</text>
+        <text>一层：中餐食堂，菜色范围广泛；粉面，炒面（饭），小炒，炸鸡套餐，饮品。中、晚餐时有独家主食面点。</text>
+        <text>夜宵特色：麻辣烫，汤面，馄饨，煎包（荐！）</text>
+        <text>二层：平价楼层，蛋炒饭（荐！）</text>
+        <text>三层：陕西美食、兰州美食等；小炒一绝，双拼仅需8元（荐！）</text>
+        <text>四层：对外开放的万秀园餐厅，菜单点餐，现金消费，价格跟一般校外饭馆差不多，但饭菜可口，平价量足，是解馋和宴请的好去处。（万秀园餐厅的钢铁摇篮是本校特色招牌菜，身为贝壳一定要尝一尝）</text>
+      </para>
+      <para name="一餐" id='a2'>
+        <text>一餐坐落在校园的西南部，位于冶金生态楼的北侧，2斋西侧。鸿博园同样也有自助圈存机。</text>
+        <text class='subtitle'>营业时间及楼层：</text>
+        <text>早餐(时间：<text class="hightlight">6:45-9:00</text>)，一、二层。</text>
+        <text>午餐(时间：<text class="hightlight">10:45-13:00</text>)，一、二、三、四层。（四层中午为教职工专属）</text>
+        <text>晚餐(时间：<text class="hightlight">16:45-19:00</text>)，一、二、三、四层。</text>
+        <text>夜宵(时间：<text class="hightlight">19:00-21:00</text>)，四层。</text>
+        <text>一层：早起上课吃早餐的好去处，各地风味，麻辣香锅，石锅拌饭（荐！），水煮玉米（荐！），京酱肉丝（荐！）</text>
+        <text>二层：中炒、套餐、面食等，卤肉饭（荐！）</text>
+        <text>三层：清真食堂，盖饭，拌面，卤面等，大盘鸡拌面（荐！）</text>
+        <text>四层：教师食堂。</text>
+        <text>注：四层只有晚餐和夜宵面对学生开放，菜品和其他三层相似。冬天的时候有涮锅。点菜的话可以刷校园卡或者付现金。校内的老师常在四层吃饭。</text>
+      </para>
+      <para name="校内餐厅" id='a3'>
+        <text>小物美小吃街：早上有早餐餐点类，任意时段都有煎饼，烤冷面等小吃，自习回寝路过一下，犒劳自己～那边还有沙县小吃。</text>
+        <text>友谊餐厅：南面，类似万秀四层，是符合较高需求的聚餐场地。</text>
+        <text>好安逸酒店：南面的高楼（类似酒店）。</text>
+      </para>
+      <para name="水果店" id='a4'>
+        <text class='subtitle'>校内水果店</text>
+        <text>三斋水果店：大物美隔壁的隔壁，前段时间扩大了，水果质量很好。</text>
+        <text>小物美水果店：沿街就有两家，小路进去还有一家，保时保鲜，价格适中。</text>
+        <text>小物美东侧的居民区里，有一家北科大菜市场，蔬菜、水果都有卖，质量可以，价格稍贵。</text>
+        <text class='subtitle'>校外水果店</text>
+        <text>百果园，嘉果一品：出东门往北走，在十字路口的西边即可看见两家水果店隔街相对，价格便宜，办理会员有小幅优惠。</text>
+        <text>物美大卖场：上文提到的十字路口继续往西，物美大卖场里的水果蔬菜区。</text>
+      </para>
+      <para name="咖啡厅" id='a5'>
+        <text>学校有三个安静文艺的咖啡厅～</text>
+        <text>酷云咖啡：从图书馆东门进去左拐，在一层新书阅览室旁边，还提供面包，甜点，小蛋糕和各类西餐主食，并且偶尔还举办沙龙活动。</text>
+        <text>时光北岸咖啡厅：位于7斋学生活动中心一层，位置便利，味道不错。</text>
+        <text>瑞幸咖啡体育馆店：体育馆后门二楼，环境很好哦！</text>
+        <text>还有一家饮品店：90°炭烧咖啡，位于大物美一层，除售卖各类咖啡、奶茶外，兼卖冰淇淋，奶茶，布丁，双皮奶，绿豆冰沙等，价格适中。</text>
+        <text>对了，冰淇淋除了俩物美之外，小吃街沙县旁边也有！超便宜！</text>
+      </para>
+    </view>
+  </view>
+</scroll-view>

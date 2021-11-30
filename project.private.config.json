@@ -1,0 +1,59 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "yingxin",
+          "pathName": "pages/yingxin/yingxin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "detail",
+          "pathName": "pages/detail/detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "nav",
+          "pathName": "pages/nav/nav",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "shequ",
+          "pathName": "pages/shequ/shequ",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "my",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "me",
+          "pathName": "pages/me/me",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/edit/edit",
+          "pathName": "pages/edit/edit",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

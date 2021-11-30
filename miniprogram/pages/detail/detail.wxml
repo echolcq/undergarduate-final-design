@@ -1,0 +1,22 @@
+<scroll-view scroll-y='true' style='height:{{screenHeight}}rpx'>
+  <view>
+    <swiper indicator-dots='true' indicator-active-color='white' autoplay='true' interval='3000'>
+      <swiper-item wx:for="{{detail.imageList}}" wx:key="*this">
+        <image mode='aspectFill' src='{{item.url}}'></image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class='title-view'>
+    <text class='title-text'>{{detail.title}}</text>
+    <view class='image-nav' bindtap='goToNav'>
+      <image src='/images/nav.png'></image>
+    </view>
+  </view>
+
+  <block wx:for="{{detail.detail}}" wx:key="*this">
+    <view class='introView'>
+      <text space="nbsp" decode class='text text-first'>{{item.text}}</text>
+    </view>
+  </block>
+</scroll-view>

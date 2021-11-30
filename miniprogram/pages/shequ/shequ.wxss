@@ -1,0 +1,192 @@
+/* pages/shequ/shequ.wxss */
+.top{
+  width: 100%;
+  height:150rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.top .left-menu{
+  width:50%;
+  height:100%;
+  display: flex;
+  flex-direction: row;
+}
+.top .left-menu .icon{
+  width:100rpx;
+  height:100rpx;
+  border-radius: 50%;
+  overflow:hidden;
+  margin-left:50rpx;
+  margin-top:50rpx;
+}
+.top .left-menu .txt{
+  display: flex;
+  flex-direction: column;
+  margin-top:60rpx;
+  padding-left: 20rpx;
+  color: white;
+}
+
+.top .left-menu .txt .name{
+  font-size:32rpx;
+}
+
+.top .left-menu .txt .date{
+  font-size:25rpx;
+  padding-top: 30rpx;
+}
+
+.top .guanzhu{
+  margin-top:50rpx;
+  width:150rpx;
+  height:100rpx;
+  margin-left:100rpx;
+  width:140rpx;
+  border-radius:3rpx;
+}
+
+.tuozhan{
+  margin-top:150rpx;
+  width:80rpx;
+  height:400rpx;
+  margin-left:600rpx;
+  display: flex;
+  flex-direction: column;
+
+}
+.tuozhan .zhan{
+  height:150rpx;
+  display: flex;
+  flex-direction: column;
+}
+.tuozhan .zhan .number{
+  color: white;
+  font-size: 32rpx;
+  text-align: center;
+}
+
+.tuozhan .pinglun{
+  height:150rpx;
+  display: flex;
+  flex-direction: column;
+}
+.tuozhan .pinglun .number{
+  color: white;
+  font-size: 32rpx;
+  text-align: center;
+}
+
+.tuozhan .fabu{
+  height:150rpx;
+  display: flex;
+  flex-direction: column;
+}
+.tuozhan .fabu .number{
+  color: white;
+  font-size: 32rpx;
+  text-align: center;
+}
+
+
+
+.intro{
+  margin-top:50rpx;
+  margin-left:50rpx;
+}
+.intro .biaoti{
+  font-size: 45rpx;
+  color:white;
+}
+.intro .info{
+  font-size: 32rpx;
+  color: white; 
+}
+
+.tab{
+  width:100%;
+  height:100rpx;
+}
+.tab .tab-item{
+  font-size: 44rpx;
+  margin-left: 50rpx;
+  margin-top: 10rpx;
+
+}
+.comment-list{
+  height:100%;
+  overflow:auto;
+}
+
+.comment-list .comment{
+  min-height:200rpx; 
+  height:auto!important; 
+  height:200rpx;
+  width:100%;
+}
+
+.comment-list .comment .comment-title{
+  width:100%;
+  height:100rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.comment-list .comment .comment-title .comment-im{
+  height:80rpx;
+  width:80rpx;
+  border-radius: 50%;
+  overflow:hidden;
+  margin-left:50rpx;
+  margin-top:10rpx;
+}
+.comment-list .comment .comment-title .comment-name{
+  font-size:38rpx;
+  margin-top:30rpx;
+  padding-left: 20rpx;
+}
+
+.comment-list .comment .co{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  margin-left:50rpx;
+}
+
+.comment-list .comment .co .comment-content{
+  font-size: 32rpx;
+  line-height: 1.4;
+  font-weight: 400;
+  padding: 10rpx 0;
+  left:50rpx;
+  text-align: left;
+  
+}
+.comment-list .comment .co .comment-time{
+  font-size:32rpx;
+  margin-top:10rpx;
+  left:50rpx;
+  text-align: left;
+ 
+}
+
+.comment-write {
+  width: 100%;
+  text-align: left;
+  padding: 20rpx;
+  font-size: 32rpx;
+}
+.send {
+  background: #d43c33;
+  color: #fff;
+  font-size: 24rpx;
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+}
+
+
+
+
+
+

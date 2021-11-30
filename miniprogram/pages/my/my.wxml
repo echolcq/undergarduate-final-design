@@ -1,0 +1,21 @@
+<!--pages/my/my.wxml-->
+<view class="back">
+  
+</view>
+
+<view class="my_info">
+    
+  <block wx:if="{{!hasUserInfo}}">
+    <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile">
+      授权登录
+    </button>
+  </block>
+  <block wx:else>
+  <image class="userinfo-avatar" src="{{userinfo.avatarUrl}}"></image>
+  <text class="userinfo-nickname">{{userinfo.nickName}}</text>
+  </block>
+
+</view>
+
+
+

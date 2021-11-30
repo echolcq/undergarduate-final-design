@@ -1,0 +1,43 @@
+/* pages/my/my.wxss */
+.back{
+  width:100%;
+  height:300rpx;
+  background-color:#1296db;
+}
+
+.my_info{
+  width:96%;
+  height:300rpx;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  margin-right:25rpx;
+  justify-content: center;
+  position:fixed;
+  top:90rpx;
+  border-radius: 10rpx;
+  box-shadow: 2rpx 5rpx 5rpx 4rpx #8888;
+  background-color: #fff;
+  align-content:center;
+}
+
+button{
+  background-color: green;
+  color:white;
+  font-size: medium;
+  font-weight: 500 !important;
+  width:300rpx !important;
+}
+
+.my_info .userinfo-avatar{
+  width:150rpx;
+  height:150rpx;
+  border-radius: 100rpx;
+  overflow:hidden;
+  align-self: center;
+}
+.my_info .userinfo-nickname{
+  font-size: 44rpx;
+  align-self: center;
+}
+

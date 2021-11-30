@@ -1,0 +1,21 @@
+<!--pages/yingxin/yingxin.wxml-->
+<swiper indicator-dots="true" autoplay="true" interval="3000" circular="true">
+  <swiper-item wx:for="{{topbanners}}" wx:key="_id">
+    <image src="{{item.src}}">
+    </image>
+  </swiper-item>
+</swiper>
+
+<view class="menu">
+	<view class="menuItem" wx:for="{{menu}}" wx:key="_id" data-index="{{index+1}}"  bindtap="goTo">
+    <image src="{{item.src}}"></image>
+    <text class="name">{{item.name}}</text>
+  </view>
+</view>
+
+<view class="videos">
+  <text class="title">校园风采</text>
+  <video class="video" src="{{videoshouye[0].videosrc}}"> </video>
+</view>
+
+

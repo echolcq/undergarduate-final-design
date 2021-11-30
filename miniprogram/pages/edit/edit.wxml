@@ -1,0 +1,19 @@
+<!--pages/edit/edit.wxml-->
+<view class="container">
+  <textarea class="title" placeholder="视频标题"
+    bindinput="onInput" maxlength="10" auto-focus
+    bindfocus="onFocus" bindblur="onBlur"> 
+ </textarea>
+  <textarea class="content" placeholder="视频介绍" bindinput="input" auto-focus
+    bindfocus="onFocus" bindblur="onBlur"
+  ></textarea>
+</view>
+
+<cover-image class="up" src="cloud://lynn-0gusuue75a3bd1c6.6c79-lynn-0gusuue75a3bd1c6-1305659349/upvideo.png" bindtap="chooseVideo"></cover-image>
+
+
+
+<view class="footer" style="bottom:{{footerBottom}}px">
+  <text class="words-num">标题共{{wordsNum}}</text>
+  <button class="send-btn" bindtap="send">发布</button>
+</view>

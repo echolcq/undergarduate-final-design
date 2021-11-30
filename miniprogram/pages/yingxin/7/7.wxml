@@ -1,0 +1,28 @@
+<text bindtap="showModal" class="cuIcon-list modal-button {{modalName=='DrawerModal'?'hidden':''}}"></text>
+<scroll-view scroll-y='true' class='scroll-view' scroll-into-view="{{scrollTo}}">
+  <view class="container">
+    <text class='title'>医疗报销</text>
+    <view class="content">
+    <para name="校医院工作时间" id='a1'>
+<text class="no-indent">1. 全年无休，24小时有医生接诊。</text>
+<text class="no-indent">2. 常规门诊时间：</text>
+<text><text class="hightlight">周一至周五 上午8：00——11：30</text></text>
+<text><text class="hightlight">下午14：00——17：30</text></text>
+<text class="no-indent">3. 延时门诊时间：</text>
+<text><text class="hightlight">周一至周五：17：30-20：00</text></text>
+<text class="no-indent">4. 双休日及法定节假日请到急诊值班室由值班医生负责接诊。</text>
+</para>
+<para name="关于药品" id='a2'>
+<text>校内外门诊医疗费用自负10%，校外住院医疗费用自负5%。</text>
+<text>校外有宝芝堂大药店、康寿安医药超市等正规场所购买药品，宝芝堂大药店位于志新东路14号（从东门出发穿过小区），康寿安医药超市位于志新东路78号（志新桥北侧），北京福仁堂医药经营部（北门、志新路中国石油探勘开发研究院），天宝堂平价大药房（学校西北肯德基旁边、学院路甲17号1栋）  </text>
+</para>
+<para name="医疗报销" id='a3'>
+<text>1.大学生凭结算凭证在本市定点医疗机构发生的符合规定的住院和门诊大病医疗费用，属于居民医保基金支付的，应由定点医疗机构记账，其余医疗费用由定点医疗机构向大学生本人收取。</text>
+<text>2.定点医疗机构应按月汇总大学生的医疗费用，并根据大学生结算凭证、医疗项目、出院账单等资料，填写费用结算申报表，于每月1日至10日向所属的区县医保中心申请结算。</text>
+<text>3.区县医保中心应在收到定点医疗机构提交的结算申报表及相关资料后的10个工作日内，对大学生的医疗费用进行初审及提出初审意见，并将结算申报表汇总后报市医保中心。</text>
+<text>4.市医保中心应在收到区县医保中心初审意见和汇总资料之日起的10个工作日内，按有关规定进行审核，再将审核情况汇总报市医保办审定后，在7个工作日内拨付给定点医疗机构。</text>
+</para>
+
+    </view>
+  </view>
+</scroll-view>

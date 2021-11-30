@@ -1,0 +1,10 @@
+<!--component/bottom-modal/bottom-modal.wxml-->
+<cover-view class="modal" hidden="{{!modalShow}}">
+  <cover-view class="panel">
+    <cover-image class="img" src="../../images/delete.png" bindtap="onClose"></cover-image>
+    <slot name="slot1"></slot>
+    <slot name="slot2"></slot>
+    <slot name="slot3"></slot>
+    
+  </cover-view>
+</cover-view>

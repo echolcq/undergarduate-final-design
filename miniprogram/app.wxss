@@ -1,0 +1,69 @@
+/**app.wxss**/
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+@import "colorui/animation.wxss";
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.modal-button {
+  display: block;
+  position: fixed;
+  bottom: 140rpx;
+  right: -70rpx;
+  z-index: 999;
+  border-radius: 50%;
+  height: 140rpx;
+  width: 140rpx;
+  line-height: 140rpx;
+  font-size: 40rpx;
+  text-align: center;
+  background-color: rgba(235, 102, 90, 0.7);
+  text-indent: -1em;
+  color: white;
+}
+
+.title {
+  font-size: 50rpx;
+  text-align: center;
+  display: block;
+  margin: 14rpxm;
+  color: rgb(101, 192, 168);
+  font-weight: bolder;
+}
+
+text {
+  font-size: 32rpx;
+  /* color: rgb(79, 79, 79); */
+}
+
+.hightlight {
+  color: #e5a850 !important;
+  font-weight: bold;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: inline !important;
+}
+
+.subtitle {
+  text-indent: 0 !important;
+  font-weight: bold;
+  margin-top: 6rpx;
+  color: #000 !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+image {
+  height: 100%;
+  width: 100%;
+}

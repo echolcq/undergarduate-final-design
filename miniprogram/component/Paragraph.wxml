@@ -1,0 +1,8 @@
+<!--component/Paragraph.wxml-->
+
+<view id="{{id}}" class='para'>
+  <text class='para-title no-indent'>{{name}}</text>
+  <view class='para-content'>
+    <slot></slot>
+  </view>
+</view>

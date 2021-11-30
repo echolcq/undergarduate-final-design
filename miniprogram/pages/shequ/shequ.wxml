@@ -1,0 +1,83 @@
+<!--pages/shequ/shequ.wxml-->
+<swiper vertical duration="200" bindchange="slide" style="height:{{windowHeight}}px; width:100%;background:#000">
+ <block wx:for="{{videoinfo}}" wx:key="_id">
+  <swiper-item style="height:100%; width:100%">
+   <video wx:if="{{index==changeIndex}}" style="height:100%; width:100%" src="{{item.url}}" autoplay="true">
+
+    <cover-view class="top">
+      <cover-view class="left-menu">
+        <cover-image class="icon" src="{{userinfo[index].url}}" >
+        </cover-image>
+        <cover-view class="txt">
+          <cover-view class="name">{{userinfo[index].nickname}}</cover-view>
+          <cover-view class="date">{{item.time}}</cover-view>
+        </cover-view>
+      </cover-view>
+      <cover-image class="guanzhu" src='../../images/weiguan.png' />
+    </cover-view>
+
+    <cover-view class="tuozhan">
+      
+      <cover-view class="zhan">
+        <cover-view class='like'>
+          <cover-image  wx:if="{{videoinfo[index].isZan==true}}" bindtap="dianzan" data-videoid="{{item._id}}" data-isZan="{{videoinfo[index].isZan}}" src="{{zan1}}" />
+          <cover-image wx:else bindtap="dianzan" data-videoid="{{item._id}}" data-isZan="{{videoinfo[index].isZan}}" src="{{zan2}}" />
+        </cover-view>
+        <cover-view class='number'>{{videoinfo[index].likecount}}</cover-view> 
+      </cover-view>
+
+      <cover-view class="pinglun">
+        <cover-view class='comment'> 
+          <cover-image  bindtap='get_comment' data-videoid="{{item._id}}"src="../../images/pinglun.png" />
+        </cover-view> 
+        <cover-view class='number'>{{pingnum}}</cover-view> 
+      </cover-view> 
+
+      <cover-view class="fabu">
+        <cover-view class='edit'> 
+          <cover-image  bindtap='edit' src="../../images/fabu.png" />
+        </cover-view> 
+        <cover-view class='number'>发布</cover-view> 
+      </cover-view> 
+    
+    </cover-view>
+
+    <cover-view class="intro">
+      <cover-view class="biaoti">{{item.title}}</cover-view>
+      <cover-view class="info">{{item.text}}</cover-view>
+    </cover-view>
+
+  
+  <modal modalShow="{{modalShow}}">
+    <cover-view  class="tab" slot="slot1">
+      <cover-view class="tab-item">评论列表</cover-view>
+    </cover-view>
+
+    <cover-view  class="comment-list" slot="slot2">
+      <block wx:for="{{colist}}" wx:key="_id">
+        <cover-view class="comment">
+          <cover-view class="comment-title">
+            <cover-image class="comment-im" src="{{pinguser[index].url}}"></cover-image>
+            <cover-view class="comment-name">{{pinguser[index].nickname}}</cover-view>
+          </cover-view>
+          <cover-view class="co">
+          <cover-view class="comment-content">{{item.pinglun}}</cover-view>
+          <cover-view class="comment-time">{{item.time}}</cover-view>
+          </cover-view>
+        </cover-view>     
+      </block>
+    </cover-view>
+
+    <view slot="slot3">
+      <form data-videoid="{{item._id}}" bindsubmit="onSend">
+        <textarea name="content" class="comment-write" placeholder="写评论" value="{{content}}" fixed="true"></textarea>
+        <button class="send" form-type="submit">发送</button>
+      </form>
+    </view>
+
+  </modal>
+
+  </video>
+  </swiper-item>
+ </block>
+</swiper>

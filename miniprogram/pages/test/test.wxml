@@ -1,0 +1,68 @@
+<!--pages/test/test.wxml-->
+<view class="box" hover-class="boxhover">
+  <view class="box1" hover-class="hover" hover-stop-propagation="true">11111</view>
+</view>
+
+
+<view  class="out">
+  <text>微信<text decode="true"> &lt; </text>小程序</text>
+</view>
+<view class="out">22222</view>
+
+<scroll-view scroll-x="true" scroll-left="30">
+  <view class="srcOut">
+    <view class="srcbox">222</view>
+    <view class="srcbox">111</view>
+    <view class="srcbox">111</view>
+    <view class="srcbox">111</view>
+  </view>
+</scroll-view>
+
+<view>
+  <navigator class="link" url="../databaseGuide/databaseGuide" open-type="redirect">微信
+  </navigator>
+</view>
+
+<swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" circular="true" previous-margin="20" next-margin="20">
+  <swiper-item class="banItem">
+    <image src="https://oss.showapi.com/banner/2021/banner3.jpg" mode="aspectFit"></image>
+  </swiper-item>
+  <swiper-item class="banItem">
+    <image src="https://oss.showapi.com/banner/2021/banner2.jpg" mode="aspectFit"></image>
+  </swiper-item>
+  <swiper-item class="banItem">
+    <image src="https://oss.showapi.com/banner/2021/banner4.jpg" mode="aspectFit"></image>
+  </swiper-item>
+</swiper>
+
+<text user-select="true" space="ensp">22222   333333</text>
+<text>35678990909</text>
+
+<view>
+  <button type="primary" plain="true">登录</button>
+  <button type="warn">退出</button>
+
+  <form bindsubmit="onSubmit">
+    <input class="ipt" focus="true" type="text" placeholder="请输入用户名" placeholder-class="iptPlace" cursor-spacing="100">
+    </input>
+    <button form-type="submit">提交</button>
+  </form>
+</view>
+<switch checked="true"></switch>
+
+<view style="padding:50px; text-align:center">
+  <icon type="success" size="80"></icon>
+  <view>提交成功</view>
+</view>
+
+<view style="padding:50px;">
+  <progress percent="60" show-info="true" border-radius="10" active="true"></progress>
+</view>
+
+
+<image class="img1" src="https://www.showapi.com/images/apiLogo/special/9.png" mode="aspectFit" show-menu-by-longpress="true">
+</image>
+
+
+
+

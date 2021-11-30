@@ -1,0 +1,30 @@
+/* component/bottom-modal/bottom-modal.wxss */
+.modal{
+  position: fixed;
+  top:0;
+  right: 0;
+  bottom:0;
+  left:0;
+  z-index:99;
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+}
+.modal .panel{
+  position: absolute;
+  bottom: 0rpx;
+  left:0;
+  width:100%;
+  min-height:400px; 
+  height:auto!important; 
+  height:400px;
+  background-color:white;
+}
+
+.modal .panel .img{
+  position: absolute;
+  right:10rpx;
+  top:10rpx;
+  padding:20rpx;
+  width:50rpx;
+  height:50rpx;
+}

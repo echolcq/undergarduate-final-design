@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/yingxin/yingxin",
+    "pages/nav/nav",
+    "pages/my/my",
+    "pages/test/test",
+    "pages/detail/detail",
+    "pages/shequ/shequ",
+    "pages/edit/edit",
+    "component/bottom-modal/bottom-modal"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "地图短视频研学旅游",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "Img": "/component/Image",
+    "para": "/component/Paragraph"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/yingxin/yingxin",
+        "text": "迎新攻略",
+        "iconPath": "images/tabbar/yingxin0.png",
+        "selectedIconPath": "images/tabbar/yingxin1.png"
+      },
+      {
+        "pagePath": "pages/nav/nav",
+        "text": "校内导航",
+        "iconPath": "images/tabbar/nav0.png",
+        "selectedIconPath": "images/tabbar/nav1.png"
+      },
+      {
+        "pagePath": "pages/shequ/shequ",
+        "text": "社区",
+        "iconPath": "images/tabbar/shequ0.png",
+        "selectedIconPath": "images/tabbar/shequ1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/tabbar/my0.png",
+        "selectedIconPath": "images/tabbar/my1.png"
+      }
+    ]
+  }
+}

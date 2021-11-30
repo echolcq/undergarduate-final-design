@@ -1,0 +1,54 @@
+<text bindtap="showModal" class="cuIcon-list modal-button {{modalName=='DrawerModal'?'hidden':''}}"></text>
+<scroll-view scroll-y='true' class='scroll-view' scroll-into-view="{{scrollTo}}">
+  <view class="container">
+    <text class='title'>网络通讯</text>
+    <view class="content">
+    <para name="校园网" id='a1'>
+<text>原则上来说，大一上学期是不允许带电脑的。</text>
+<text>学生在宿舍内可以上网，每个宿舍都有1到2个上网口，可以直接连接校园网。并不能私自迁网线开通校外运营商网络。</text>
+<text>校园网学生用户组收费标准：1.5G/元。</text>
+<text>如何缴费：登陆 pay.ustb.edu.cn 可用使用支付宝进行上网费用的充值，大概两分钟到账，很方便。</text>
+<text class='subtitle'>路由器攻略</text>
+<text>步骤1：如图链接路由器</text>
+<image src="{{src[0].src}}"
+data-src="{{src[0].src}}" bindtap="imgpreview" mode="widthFix"></image>
+<text>步骤2：根据路由器的说明书一步一步设置</text>
+<text>步骤3：在路由器设置中找到DHCP选项，将其关闭，即可开始愉快的上网了（不这样做的话会互相串号）。</text>
+<text>步骤4：联网嗨起来，别忘了在 city.ibeike.com 逛逛哦！不用登录，免费的哦！</text>
+<text class='subtitle'>路由器选购指南</text>
+<text>1）建议自行在大型电商购买，价格比学校内很多小商贩要实惠不少，而且品种更齐全，售后更有保障。</text>
+<text>2）100元左右的比较合适，太便宜的可能性能不够，再贵的性能就会冗余了。另外，因为每个寝室都有两个网口，而一个路由器只有3个口可以用来接电脑，所以建议和室友们合资购买两个路由器，这样日后全寝室的电脑都可以用有线上网，稳定性是无线不可比拟的。</text>
+<text>3）2.4GHz和5GHz路由器怎么选：经常有同学问这个问题，现在路由器参数这么多，尤其是频率这个，完全搞不懂。实际上，在寝室使用的话，这两个是差不多的。不用太纠结</text>
+
+<text>具体解释起来的话，就要借助大学物理知识了，有兴趣的同学可以继续看，没兴趣的同学可以跳到下一节了：先给出大家两个公式解释一下“穿墙”的原理。</text>
+<text>绝对折射率公式v=c/n（20℃一个标准大气压n=1.00027）</text>
+<text>c = λf  波速=波长×频率</text>
+<text>根据两个公式我们可以得出，空气中传播的两种信号，2.4GHz比5GHz频率低，所以波长更长。波长长的信号衍射现象会更加明显，衍射更明显，就意味着这个信号可以绕过更多的障碍物。我们俗称的“穿墙”，实际并不是信号穿过墙了，因为任何信号，穿过墙之后能量都会极度衰减，而穿墙的真面目正是衍射现象，实际上信号是通过缝隙绕过去的并不是穿过去的。</text>
+<text>因此我们可以得出结论，2.4GHz的衍射更明显，也就是“穿墙”更在行。</text>
+<text>但是5GHz的频率高，也就是信号传递的能量更大，所以在信号可以达到的地方，5GHz的WIFI速度是会更快的。</text>
+<text>希望新生同学们看了此篇路由器攻略不仅仅会装路由器，更能学到一些知识。</text>
+<text>【此篇路由器攻略版权归北京科技大学iBeiKe团队和本文作者iBeiKe团队原CTO曹宇宁所有，图片版权归iBeiKe团队原设计部部长施浩然所有，转载均需得到iBeiKe团队许可，否则团队有权利进行法律上的追究】</text>
+
+<text class='subtitle'>Tips</text>
+<text>上网账户只能在一卡通机器上开通，不能单独人工受理。一个账号可两点登陆。</text>
+<text>学校内的上网地点一般晚九、十点钟就会关门，有空调。学校的上网地点、打印店里由于人员复杂，病毒都会比较多，所以在这里插U盘会很容易染毒，建议用完后将U盘直接格式化。（有些打印店不能上网）</text></para>
+<para name="常用网站" id='a2'>
+<text>1）北科大信息门户——e.ustb.edu.cn这是北科校园各种信息的综合平台，这里集合了我校各大网站的数据库，有关于你的各种信息，甚至是你一卡通的每次消费都可以查到。</text>
+<text>2）iBeiKe官网——www.ibeike.com提供了贝城社区论坛，北科百科wiki，课件搜索OCW，BT下载站等多项服务，高清电影免费看，在北科读书却没来过这里就不能算完整的北科大学生。（想了解校学生会工作的即可去官网内Home站，Wiki站也有各社团介绍！）</text>
+<text>3）校外登录校园网 vpn4.ustb.edu.cn/login</text>
+<text>PS：校园网是按流量计费的，而且对迅雷之的软件有限制，在此推荐几个用校园网高速、不计流量下载资源的好站点（一般用uTorrent这个软件，详情去iBeiKe公众号或者city站看教程）：</text>
+<text class='subtitle'>校内：</text>
+<text>iBeiKePT站——pt.ibeike.com（登陆校园网即可使用，便捷快速）</text>
+<text class='subtitle'>校外：</text>
+<text>六维空间——bt.neu6.edu.cn</text>
+<text>北邮人——bt.byr.edu.cn</text>
+</para>
+<para name="邮寄" id='a3'>
+<text>鉴于大家入学后对信件、包裹的寄送流程不清楚，在此做个说明。同学们领取挂号信、平信、包裹时，为了保证正常通信，即是安全准确地投递，要做到以下几点：</text>
+<text>1）书写正确的收信地址，即北京市海淀区学院路30号北京科技大学xxx信箱xxx同学收，邮编100083，电话1xxxxxxxxxx（一定要写上信箱号！开学导员会告诉大家的，一般学院几个班共用）</text>
+<text>2）学生领取挂号信，要以班级（信箱）为单位，设专人领取（生活委员）。如特殊情况须自行领取，请在领取地同时出示学生证和身份证。</text>
+<text>3）凡没有写清信箱或地址不详地信件、包裹，收发室将按照邮政法有关规定做退信处理。</text>
+</para>
+    </view>
+  </view>
+</scroll-view>

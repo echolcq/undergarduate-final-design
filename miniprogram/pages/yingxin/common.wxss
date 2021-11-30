@@ -1,0 +1,39 @@
+Page {
+  background-size: 100% 100%;
+}
+
+.scroll-view {
+  position: fixed;
+  height: 86.61972%;
+  width: 640.409603961182rpx;
+  box-sizing: border-box;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, 5rpx);
+}
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+
+.sub-title {
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  text-indent: 0 !important;
+  font-weight: bold;
+  color: dodgerblue;
+}
+
+.sub {
+  padding: 0 10rpx;
+}
+
+.no-indent {
+  text-indent: 0 !important;
+}
+
+.span {
+  display: inline;
+}

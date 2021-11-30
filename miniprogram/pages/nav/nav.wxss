@@ -1,0 +1,46 @@
+/* pages/nav/nav.wxss */
+@import "../../colorui/animation.wxss";
+@import "./nav.skeleton.wxss";
+
+map {
+  height: 100%;
+  width: 100%;
+}
+
+.view-map{
+  height: 44vh;
+}
+
+.bottomScroll{
+  height: 56vh;
+  padding-bottom: 90rpx;
+  background-color: white;
+}
+
+.post-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20rpx;
+  height: 90rpx;
+  border-radius: 16rpx;
+}
+
+.image-nav {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+
+.text-nav {
+  width: 70vw;
+  font-size: medium;
+}
+
+.myLocation {
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 520rpx;
+  margin-left: 670rpx;
+}
